@@ -41,11 +41,11 @@ COPY fake.cfg /etc/dummy/fake.cfg
 ENTRYPOINT ["ping", "8.8.8.8"]
 ```
 
-以下指令是使用 `demo/Dockerfile` 作為藍本去建置名為 `t` 且 image tag 為 `0.1` 的 image，
+以下指令是使用 `demo/Dockerfile` 作為藍本去建置名為 `test` 且 image tag 為 `0.1` 的 image，
 而 `demo/` 底下的所有檔案內容會傳送到 Docker Daemon 以便 `COPY` 或 `ADD` 檔案進 image 內。
 
 ```bash
-docker build -t t:0.1 -f demo/Dockerfile demo/
+docker build -t test:0.1 -f demo/Dockerfile demo/
 ```
 
 Build image 的過程:
@@ -87,7 +87,7 @@ Step 5/5 : ENTRYPOINT ["ping", "8.8.8.8"]
 Removing intermediate container 75f274585ab9
  ---> 8f197cd17876
 Successfully built 8f197cd17876
-Successfully tagged t:0.1
+Successfully tagged test:0.1
 ```
 
 ## DIY Time
