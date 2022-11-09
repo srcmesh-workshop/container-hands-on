@@ -94,3 +94,35 @@ Successfully tagged test:0.1
 
 請按照 [Install and Configure Nginx on Ubuntu](https://ubuntu.com/tutorials/install-and-configure-nginx#1-overview) 
 步驟去撰寫 Dockerfile。
+
+### Step1
+
+![](images/1.png)
+
+### Step2
+
+![](images/2.png)
+
+### Step3
+
+![](images/3.png)
+
+### Step4
+
+![](images/4.png)
+
+* 設定檔統一放在 `/etc/nginx/sites-enabled/demo`
+
+### Step5
+
+![](images/5.png)
+
+
+
+### Command
+
+```
+$ docker run -d -p <port>:80 t:0.1
+$ docker ps
+$ docker exec -it <container> bash
+```
